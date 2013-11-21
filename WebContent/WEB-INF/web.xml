@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
-  <servlet>
-    <servlet-name>ls</servlet-name>
-    <servlet-class>it.view</servlet-class>
-    <init-param>
-      <param-name>cmd</param-name>
-      <param-value>ls</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ls</servlet-name>
-    <url-pattern>/ls/</url-pattern>
-  </servlet-mapping>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" metadata-complete="true">
+
+
+
+
+	<servlet>
+		<servlet-name>pwd</servlet-name>
+		<servlet-class>it.view.view</servlet-class>
+		<init-param>
+			<param-name>cmd</param-name>
+			<param-value>pwd</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>pwd</servlet-name>
+		<url-pattern>/pwd/</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>prova</servlet-name>
+		<servlet-class>it.view.view</servlet-class>
+		<init-param>
+			<param-name>cmd</param-name>
+			<param-value>ls -la</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>prova</servlet-name>
+		<url-pattern>/prova/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cat</servlet-name>
+		<servlet-class>it.view.view</servlet-class>
+		<init-param>
+			<param-name>cmd</param-name>
+			<param-value>cat</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cat</servlet-name>
+		<url-pattern>/cat/</url-pattern>
+	</servlet-mapping>
+	
+
+
+	<servlet>
+		<servlet-name>nec</servlet-name>
+		<servlet-class>it.view.view</servlet-class>
+		<init-param>
+			<param-name>cmd</param-name>
+			<param-value>nec</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>nec</servlet-name>
+		<url-pattern>/nec/</url-pattern>
+	</servlet-mapping>
+
 </web-app>
